@@ -1,0 +1,82 @@
+
+.wwdc {
+    position: relative;
+    margin: 100px auto;
+}
+
+span{
+    display: block;
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    top: calc(50% - 10em);
+    left: calc(50% - 10em);    
+}
+
+.large.circle{
+    width: 12.5em;
+    height: 12.5em;
+    box-shadow: 1em 1em 2em #333;
+    transform-origin: 50% 12.5em;
+    position: absolute;
+    /*background: rgba(16, 63, 236, .75);  圓形等於全部*/
+}
+
+.circle{
+    border-radius: 50%;
+    left: calc(50% - 6.25em);
+    top: calc(50% - 12.5em);
+}
+
+.one{
+    transform: rotateZ(225deg);
+    background: rgba(16, 63, 236, .75);
+}
+.two{
+    transform: rotateZ(180deg);
+    background: rgba(37, 172, 162, .75);
+}
+.three{
+    transform: rotateZ(135deg);
+    background: rgba(233, 124, 32, .75);
+}
+.four{
+    transform: rotateZ(90deg);
+    background: rgba(235, 67, 35, .75);
+}
+.five{
+    transform: rotateZ(45deg);
+    background: rgba(190, 28, 65, .75);
+}
+.six{
+    transform: rotateZ(0);
+    background: rgba(208, 57, 159, .75);
+}
+.seven{
+    transform: rotateZ(-45deg);
+    background: rgba(150, 32, 198, .75);
+}
+.eight{
+    transform: rotateZ(-90deg);
+    background: rgba(95, 33, 203, .75);
+}
+
+.spin{
+  animation: spin 10s linear infinite paused;
+}
+.spin:hover{
+    animation-play-state: running;
+}
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);/* 1turn 是轉一圈 */
+       }
+}
+
+
+
+
+
+

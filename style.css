@@ -1,0 +1,395 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hero-img{
+    background-image:url(ba.jpg);
+    height: 100vh;
+    width:  100%;
+    background-size: cover;
+}
+.slogan{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 40vh;
+}
+.button{
+    border: 3px solid #fff;
+    font-size: 30px;
+    width: 300px;
+    margin: 50px auto 0 auto;
+    display: block;
+    padding: 15px 0;
+    border-radius: 25px 50px 30px 10px;
+}
+
+.button:hover{
+    background-color: #fff;
+    color: #333;
+}
+.header{
+    background-color: rgba(255,255,255,.8);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+.logo {
+    color: #685;
+    font-weight: bold;
+    font-size: 32px;
+    display: inline-block;
+    width: 30%;
+}
+.menu{
+    display: inline-block;
+    width: 69%;
+    text-align: right;
+}
+.menu a{
+    color: #147;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 15px;
+    transition: all .3s;
+}
+.menu a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.m1{
+    position: relative;
+    display: inline;
+}
+
+.dropdown {
+    display: none;
+    background: #fff;
+    width: 400px;
+    padding: 20px 0;
+    position: absolute;
+    top: 27px;
+    left: 15px;
+}
+.dropdown a{
+    display: block;
+    text-align: center;
+}
+
+.m1:hover .dropdown{
+    display: block;
+}
+
+.about-img{
+    width: 600px;
+    height: auto;
+}
+
+.about-img:hover{
+    filter: contrast(60%);
+}
+
+.about-wrap {
+    width: 800px;
+    margin: 100px auto;
+    position: relative;
+    height: 450px
+}
+
+
+.about-wrap .text{
+    width: 350px;
+    background: rgb(148, 230, 255, 0.8);
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 2;  /* 前後排列z-index   數字越大越前面  */
+}
+.about-wrap .photo{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.ball{
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ball-1{
+    background: #ccc;
+    width: 100px;
+    height: 100px;
+    left: -150px;
+    top: -30px;
+}
+
+.ball-2{
+    background: #3d3d3d;
+    width: 100px;
+    height: 100px;
+    right: -150px;
+    top: 30px;
+}
+
+.ball-3{
+    background: #982424;
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    top: 180px;
+}
+
+.content1, .content2{
+    width: 1100px;
+    margin: 50px auto;
+}
+
+.text, .photo{
+    float: left;
+}
+.content1 .photo{
+    width: 500px;
+    animation-iteration-count: 4;
+    animation-duration: .5s;
+}
+
+.content1 .text{
+    width: 550px;
+    margin-left: 5px;
+    padding: 20px;
+    background: rgb(148, 230, 255, 0.8);
+}
+
+.content2 .photo{
+    width: 500px;
+    position: relative;
+    margin-left: -250px;
+    z-index: 1;
+}
+
+.content2 .text{
+    width: 750px;
+    margin-left: 10px;
+    background: rgb(148, 230, 255, 1);
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    height: 150px;
+    overflow: auto;
+    mix-blend-mode: difference;
+}
+
+.content2{
+    clear: both;
+}
+
+.content1, .content2{
+    overflow: hidden;
+}
+
+.top-button{
+    width: 80px;
+    height: 80px;
+    background: #115293;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: block;
+}
+.top-arrow{
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    width: 15px;
+    height: 15px;
+    margin: 30px auto;
+    transform: rotate(45deg);   /* transform 轉變  rotate(45deg) 旋轉  */
+    display: block;
+}
+.top-button:hover{
+    background: #50ff10;
+}
+
+.top-button:hover .top-arrow{
+    border-top: 3px solid #000;
+    border-left: 3px solid #000;
+}
+.content3 {
+    width: 1180px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.content3 .box:last-child{
+    margin-right: 0;
+}
+.overlay{
+    background: rgb(0,0,0,.8);
+    position: absolute;
+    color: aqua;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 40px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.box:hover .overlay{
+    opacity: 1;
+}
+
+/***ANIMATION***/
+.slogan h1{
+    animation-name: night;
+    animation-duration: 1s;
+    animation-delay:.5s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    /* alternate-reverse消失出來 alternate出來消失 reverse消失 */
+}
+@keyframes night{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1:
+    }
+}
+
+.about-wrap .text{
+    animation: box,box2;
+    animation-duration: 5s;
+    animation-delay: 0s,5S;
+/*  animation-name: box;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; */
+    /*<<forwards跑過去定點  both>>*/
+}
+
+@keyframes box{
+    0%{
+        left: -300;
+    }
+    50%{
+        left: 100px;
+    }
+    100%{
+        left: -100px
+    }
+}
+
+@keyframes box2{
+    0%{
+        top: -300;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: -100px
+    }
+}
+.news-box {
+    position: fixed;
+    left: calc(-390% / 4);
+    top: 200px;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transition: all .5s;
+    -mos-transition: all .5s;
+    -moz-transition: all .5s;
+    z-index: 99999;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.news-box:hover{
+    left: 0;
+}
+
+.news-title{
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    writing-mode:vertical-rl;
+    text-orientation:upright; /*  英文顛倒 從上到下 */
+}
+.news-content {
+    position: absolute;
+    border: 1px solid #fff;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    left: 50%;
+    top: 50%;
+    margin-top: -33px;
+/*    left: calc(50% - 115px); 
+    限定position: absolute (or) left:% top:%加margin-left: margin-top:*/
+    margin-left: -115px;
+}
